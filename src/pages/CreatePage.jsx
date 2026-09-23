@@ -17,7 +17,7 @@ const CreatePage = () => {
     const saveProduct = async (e) => {
         e.preventDefault(); //don't reload page
         if (name === "" || quantity === "" || price === "" || image === "") {
-            alert("please fill out all fields");
+            toast.error("Please fill out all fields", { position: `top-right` });
             return;
         }
         try {
@@ -33,11 +33,13 @@ const CreatePage = () => {
                     image: image,
                 },
             );
-            toast.success(`Saved ${response.data.name} successfully`, {position: 'top-right',});
+            toast.success(`Saved ${response.data.name} successfully`, {
+                position: "top-right",
+            });
             setIsLoading(false);
             navigate("/"); //home
         } catch (error) {
-            toast.error(error.message, {position: `top-right`});
+            toast.error(error.message, { position: `top-right` });
             setIsLoading(false);
         }
     };
@@ -87,7 +89,7 @@ const CreatePage = () => {
 
                     <div>
                         {!isLoading && (
-                            <button className="block w-full mt-6 bg-blue-700 text-white rounded-sm px-4 py-2 font-bold hover:bg-blue-600">
+                            <button className="block w-full mt-6 bg-slate-700 text-white rounded-sm px-4 py-2 font-bold  hover-grow">
                                 Save
                             </button>
                         )}

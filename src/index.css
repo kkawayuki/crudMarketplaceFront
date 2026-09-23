@@ -5,6 +5,40 @@
         @apply bg-slate-400;
     }
 }
+
+/* theme variables used to create custom theme classes*/
+@theme {
+    --font-helvetica: Helvetica;
+    /* --font-sans: Helvetica, Arial, sans-serif; */
+
+    --color-supergray: #9f9d9d;
+    --color-mikuTeal: #4f7d82;
+    --color-mikuTealDarker: #40646b;
+    
+    --color-gunMetal: #303633;
+    --color-swagpurple: #8a8eac;
+    
+    --color-appleBlack: #1d1c1e;
+    --color-appleSuperBlack: #010001;
+    --color-appleBlue: #0671e2;
+
+    --color-specialRed: oklch(45.5% 0.188 13.697);
+}
+
+/*utility used to define special properties/transitions*/
+@utility hover-grow
+{
+  @apply transition duration-200 ease-in-out hover:scale-102 hover:opacity-90;
+}
+
+@utility hover-glow {
+    @apply transition duration-400 ease-in-out;
+    &:hover {
+        text-shadow: 0 0 2px var(--color-white);
+    }
+}
+
+
 /*
 :root {
   --text: #6b6375;

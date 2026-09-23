@@ -32,7 +32,7 @@ const HomePage = () => {
             <div>
                 <Link
                     to="/create"
-                    className="inline-block mt-4 shadow-md bg-blue-700 text-white rounded-sm px-4 py-2 font-bold hover:bg-blue-600 hover:cursor"
+                    className="inline-block mt-4 shadow-md bg-gray-700 text-white rounded-sm px-4 py-2 font-bold  hover:cursor hover-grow"
                 >
                     Create a Product
                 </Link>
@@ -55,7 +55,7 @@ const HomePage = () => {
                                 })}
                             </>
                         ) : (
-                            <div>There is no product</div>
+                            <div>There are no products stored- make one?</div>
                         )}
                     </>
                 )}

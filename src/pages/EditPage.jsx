@@ -120,13 +120,13 @@ const EditPage = () => {
                                         image: e.target.value,
                                     });
                                 }}
-                                className="w-full block border p-3 text-gray-600 rounded focus:outline-none focus:shadow-outline focus:border-blue-200 placeholder-gray-400"
+                                className="w-full block border p-3 text-gray-700 rounded focus:outline-none focus:shadow-outline focus:border-blue-200 placeholder-gray-400"
                                 placeholder="Enter Image URL"
                             ></input>
 
                             <div>
                                 {!isLoading && (
-                                    <button className="block w-full mt-6 bg-blue-700 text-white rounded-sm px-4 py-2 font-bold hover:bg-blue-600">
+                                    <button className="block w-full mt-6 bg-slate-700 text-white rounded-sm px-4 py-2 font-bold  hover-grow">
                                         Update
                                     </button>
                                 )}
