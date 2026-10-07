@@ -6,10 +6,10 @@ export const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 const App = () => {
     return (
         <div>
-            <nav className="bg-gray-700">
+            <nav className="bg-dark">
                 <div className="container mx-auto p-2">
                     <Link to="/">
-                        <h2 className="text-white text-2xl font-bold font-helvetica">
+                        <h2 className="text-cream text-2xl font-bold font-helvetica">
                             CRUD demo
                         </h2>
                     </Link>

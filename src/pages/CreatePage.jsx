@@ -45,7 +45,7 @@ const CreatePage = () => {
     };
 
     return (
-        <div className="max-w-lg bg-white shadow-lg mx-auto p-7 rounded mt-6">
+        <div className="max-w-lg bg-mid text-cream shadow-lg mx-auto p-7 rounded mt-6">
             <h2 className="font-semibold text-2xl mb-4 block text-center">
                 Create a Product
             </h2>
@@ -56,7 +56,7 @@ const CreatePage = () => {
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="w-full block border p-3 text-gray-600 rounded focus:outline-none focus:shadow-outline focus:border-blue-200 placeholder-gray-400"
+                        className="w-full block border border-light p-3 text-cream rounded focus:outline-none focus:shadow-outline focus:border-accent placeholder-light"
                         placeholder="Enter Name"
                     ></input>
 
@@ -65,7 +65,7 @@ const CreatePage = () => {
                         type="number"
                         value={quantity}
                         onChange={(e) => setQuantity(e.target.value)}
-                        className="w-full block border p-3 text-gray-600 rounded focus:outline-none focus:shadow-outline focus:border-blue-200 placeholder-gray-400"
+                        className="w-full block border border-light p-3 text-cream rounded focus:outline-none focus:shadow-outline focus:border-accent placeholder-light"
                         placeholder="Enter Quantity"
                     ></input>
 
@@ -74,7 +74,7 @@ const CreatePage = () => {
                         type="number"
                         value={price}
                         onChange={(e) => setPrice(e.target.value)}
-                        className="w-full block border p-3 text-gray-600 rounded focus:outline-none focus:shadow-outline focus:border-blue-200 placeholder-gray-400"
+                        className="w-full block border border-light p-3 text-cream rounded focus:outline-none focus:shadow-outline focus:border-accent placeholder-light"
                         placeholder="Enter Price"
                     ></input>
 
@@ -83,13 +83,13 @@ const CreatePage = () => {
                         type="text"
                         value={image}
                         onChange={(e) => setImage(e.target.value)}
-                        className="w-full block border p-3 text-gray-600 rounded focus:outline-none focus:shadow-outline focus:border-blue-200 placeholder-gray-400"
+                        className="w-full block border border-light p-3 text-cream rounded focus:outline-none focus:shadow-outline focus:border-accent placeholder-light"
                         placeholder="Enter Image URL"
                     ></input>
 
                     <div>
                         {!isLoading && (
-                            <button className="block w-full mt-6 bg-slate-700 text-white rounded-sm px-4 py-2 font-bold  hover-grow">
+                            <button className="block w-full mt-6 bg-accent text-cream rounded-sm px-4 py-2 font-bold  hover-grow">
                                 Save
                             </button>
                         )}

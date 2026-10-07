@@ -32,7 +32,7 @@ const HomePage = () => {
             <div>
                 <Link
                     to="/create"
-                    className="inline-block mt-4 shadow-md bg-gray-700 text-white rounded-sm px-4 py-2 font-bold  hover:cursor hover-grow"
+                    className="inline-block mt-4 shadow-md bg-dark text-cream rounded-sm px-4 py-2 font-bold  hover:cursor hover-grow"
                 >
                     Create a Product
                 </Link>

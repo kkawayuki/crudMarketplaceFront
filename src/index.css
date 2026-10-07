@@ -2,7 +2,7 @@
 
 @layer base {
     body {
-        @apply bg-slate-400;
+        @apply bg-light;
     }
 }
 
@@ -23,6 +23,13 @@
     --color-appleBlue: #0671e2;
 
     --color-specialRed: oklch(45.5% 0.188 13.697);
+
+    /* color scheme shared with a1 */
+    --color-cream: #fbf9f0;  /* all text */
+    --color-light: #babab7;  /* page background */
+    --color-mid: #565050;    /* panels, cards */
+    --color-dark: #181714;   /* navbar, bands, buttons */
+    --color-accent: #914b4b; /* primary/destructive actions, hover */
 }
 
 /*utility used to define special properties/transitions*/
