@@ -29,18 +29,18 @@ const Product = ({ product, getProducts }) => {
     };
 
     return (
-        <div className="bg-mid text-cream rounded shadow-lg overflow-hidden hover:scale-102 transition duration-200 ease-in-out">
+        <div className="bg-dark text-cream rounded shadow-lg overflow-hidden hover:scale-102 transition duration-200 ease-in-out">
             <div className="m-2 ">
             <img src={product.image} className="w-full h-28 object-cover rounded-sm" />
             </div>
-            <div className="px-4 pt-2 pb-4 bg-slate m-2 rounded-sm bg-dark">
+            <div className="px-4 pt-2 pb-4 m-2 rounded-sm bg-mid">
                 <h2 className="font-semibold">{product.name}</h2>
                 <div className="text-sm">Quantity: {product.quantity}</div>
                 <div className="text-sm">Price: ${product.price}</div>
                 <div className="mt-2 flex gap-4">
                     <Link
                         to={`/edit/${product._id}`}
-                        className="inline-block w-full text-center shadow-md text-sm bg-dark text-cream rounded-sm px-4 py-1 font-bold hover:bg-accent hover:cursor-pointer hover-grow"
+                        className="inline-block w-full text-center shadow-md text-sm bg-dark text-cream rounded-sm px-4 py-1 font-bold hover:cursor-pointer hover-grow"
                     >
                         Edit
                     </Link>

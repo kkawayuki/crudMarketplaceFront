@@ -58,7 +58,7 @@ const EditPage = () => {
     }, []);
 
     return (
-        <div className="max-w-lg bg-mid text-cream shadow-lg mx-auto p-7 rounded mt-6">
+        <div className="max-w-lg bg-dark text-cream shadow-lg mx-auto p-7 rounded mt-6">
             <h2 className="font-semibold text-2xl mb-4 block text-center">
                 Update a Product
             </h2>
